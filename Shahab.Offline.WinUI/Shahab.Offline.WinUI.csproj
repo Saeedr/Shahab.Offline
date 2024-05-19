@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D1B6B57-8564-4A66-AF35-7A755370A09A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shahab.Offline.WinUI</RootNamespace>
+    <AssemblyName>Shahab.Offline.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animator">
+      <HintPath>..\..\..\..\IT-Orbit\Projects\TeamDocs\Fathi\OfflineDlls\Animator.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>..\..\..\..\IT-Orbit\Projects\TeamDocs\Fathi\OfflineDlls\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\IT-Orbit\Projects\TeamDocs\Fathi\OfflineDlls\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Softwares\WeatherDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAllZij.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllZij.Designer.cs">
+      <DependentUpon>frmAllZij.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChildDead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChildDead.Designer.cs">
+      <DependentUpon>frmChildDead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigFinal.Designer.cs">
+      <DependentUpon>frmConfigFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteConfirm.Designer.cs">
+      <DependentUpon>frmDeleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetilas.Designer.cs">
+      <DependentUpon>frmDetilas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventEzdevaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventEzdevaj.Designer.cs">
+      <DependentUpon>frmEventEzdevaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventMohajerat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventMohajerat.Designer.cs">
+      <DependentUpon>frmEventMohajerat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventMotherDeath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventMotherDeath.Designer.cs">
+      <DependentUpon>frmEventMotherDeath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventTalagh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventTalagh.Designer.cs">
+      <DependentUpon>frmEventTalagh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventTavalod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventTavalod.Designer.cs">
+      <DependentUpon>frmEventTavalod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonel.Designer.cs">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelDelete.Designer.cs">
+      <DependentUpon>frmPersonelDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelEdit.Designer.cs">
+      <DependentUpon>frmPersonelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonFamilyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonFamilyAdd.Designer.cs">
+      <DependentUpon>frmPersonFamilyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhotoGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhotoGallery.Designer.cs">
+      <DependentUpon>frmPhotoGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadFromXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadFromXML.Designer.cs">
+      <DependentUpon>frmReadFromXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportAll.Designer.cs">
+      <DependentUpon>frmReportAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportCountByPlaceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportCountByPlaceType.Designer.cs">
+      <DependentUpon>frmReportCountByPlaceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchFamily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchFamily.Designer.cs">
+      <DependentUpon>frmSearchFamily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTajhizat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTajhizat.Designer.cs">
+      <DependentUpon>frmTajhizat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeather.Designer.cs">
+      <DependentUpon>frmWeather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZijOtherData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZijOtherData.Designer.cs">
+      <DependentUpon>frmZijOtherData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZijPoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZijPoster.Designer.cs">
+      <DependentUpon>frmZijPoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAllZij.resx">
+      <DependentUpon>frmAllZij.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChildDead.resx">
+      <DependentUpon>frmChildDead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigFinal.resx">
+      <DependentUpon>frmConfigFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteConfirm.resx">
+      <DependentUpon>frmDeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetilas.resx">
+      <DependentUpon>frmDetilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventEzdevaj.resx">
+      <DependentUpon>frmEventEzdevaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventMohajerat.resx">
+      <DependentUpon>frmEventMohajerat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventMotherDeath.resx">
+      <DependentUpon>frmEventMotherDeath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventTalagh.resx">
+      <DependentUpon>frmEventTalagh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventTavalod.resx">
+      <DependentUpon>frmEventTavalod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonel.resx">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelDelete.resx">
+      <DependentUpon>frmPersonelDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelEdit.resx">
+      <DependentUpon>frmPersonelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonFamilyAdd.resx">
+      <DependentUpon>frmPersonFamilyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhotoGallery.resx">
+      <DependentUpon>frmPhotoGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadFromXML.resx">
+      <DependentUpon>frmReadFromXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportAll.resx">
+      <DependentUpon>frmReportAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportCountByPlaceType.resx">
+      <DependentUpon>frmReportCountByPlaceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchFamily.resx">
+      <DependentUpon>frmSearchFamily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTajhizat.resx">
+      <DependentUpon>frmTajhizat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWeather.resx">
+      <DependentUpon>frmWeather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZijOtherData.resx">
+      <DependentUpon>frmZijOtherData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZijPoster.resx">
+      <DependentUpon>frmZijPoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser-internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-mark-304374_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifyingglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polaroids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rulertriangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shahab.Offline.BL\Shahab.Offline.BL.csproj">
+      <Project>{8c27949c-a90d-4084-bfa5-4c6012ed09cf}</Project>
+      <Name>Shahab.Offline.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shahab.Offline.Logging\Shahab.Offline.Logging.csproj">
+      <Project>{a803dca0-7b0c-45f9-ae04-5676e9e83602}</Project>
+      <Name>Shahab.Offline.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shahab.Offline.Model\Shahab.Offline.Model.csproj">
+      <Project>{32959d52-0a2a-4fc3-867c-9b7e87c6b431}</Project>
+      <Name>Shahab.Offline.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Disk02-Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\present.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set-of-12-vector-birthday-card-design-elements-for-your-designs--1162443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11954238481803208774johnny_automatic_stethoscope.svg.hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Old-Boss-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community-users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Age-Child-Male-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\children-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baby-carriage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kid-child-baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnant-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tbl3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfilePicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-xls-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

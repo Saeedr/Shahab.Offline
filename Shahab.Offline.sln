@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.WinUI", "Shahab.Offline.WinUI\Shahab.Offline.WinUI.csproj", "{8D1B6B57-8564-4A66-AF35-7A755370A09A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.DAL", "Shahab.Offline.DAL\Shahab.Offline.DAL.csproj", "{183F210C-B687-4230-A10B-33B08CF5C0E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.BL", "Shahab.Offline.BL\Shahab.Offline.BL.csproj", "{8C27949C-A90D-4084-BFA5-4C6012ED09CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.Model", "Shahab.Offline.Model\Shahab.Offline.Model.csproj", "{32959D52-0A2A-4FC3-867C-9B7E87C6B431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.Logging", "Shahab.Offline.Logging\Shahab.Offline.Logging.csproj", "{A803DCA0-7B0C-45F9-AE04-5676E9E83602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shahab.Offline.EquipmentsInsertApplication", "Shahab.Offline.EquipmentsInsertApplication\Shahab.Offline.EquipmentsInsertApplication.csproj", "{D32A8A75-7984-4CBB-B111-12C43B6216CE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ito-lp2:8080/tfs/shahab
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Shahab.Offline.WinUI\\Shahab.Offline.WinUI.csproj
+		SccProjectName1 = Shahab.Offline.WinUI
+		SccLocalPath1 = Shahab.Offline.WinUI
+		SccProjectUniqueName2 = Shahab.Offline.DAL\\Shahab.Offline.DAL.csproj
+		SccProjectName2 = Shahab.Offline.DAL
+		SccLocalPath2 = Shahab.Offline.DAL
+		SccProjectUniqueName3 = Shahab.Offline.BL\\Shahab.Offline.BL.csproj
+		SccProjectName3 = Shahab.Offline.BL
+		SccLocalPath3 = Shahab.Offline.BL
+		SccProjectUniqueName4 = Shahab.Offline.Model\\Shahab.Offline.Model.csproj
+		SccProjectName4 = Shahab.Offline.Model
+		SccLocalPath4 = Shahab.Offline.Model
+		SccProjectUniqueName5 = Shahab.Offline.Logging\\Shahab.Offline.Logging.csproj
+		SccProjectName5 = Shahab.Offline.Logging
+		SccLocalPath5 = Shahab.Offline.Logging
+		SccProjectUniqueName6 = Shahab.Offline.EquipmentsInsertApplication\\Shahab.Offline.EquipmentsInsertApplication.csproj
+		SccProjectName6 = Shahab.Offline.EquipmentsInsertApplication
+		SccLocalPath6 = Shahab.Offline.EquipmentsInsertApplication
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D1B6B57-8564-4A66-AF35-7A755370A09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1B6B57-8564-4A66-AF35-7A755370A09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1B6B57-8564-4A66-AF35-7A755370A09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1B6B57-8564-4A66-AF35-7A755370A09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183F210C-B687-4230-A10B-33B08CF5C0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183F210C-B687-4230-A10B-33B08CF5C0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183F210C-B687-4230-A10B-33B08CF5C0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183F210C-B687-4230-A10B-33B08CF5C0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C27949C-A90D-4084-BFA5-4C6012ED09CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C27949C-A90D-4084-BFA5-4C6012ED09CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C27949C-A90D-4084-BFA5-4C6012ED09CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C27949C-A90D-4084-BFA5-4C6012ED09CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32959D52-0A2A-4FC3-867C-9B7E87C6B431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32959D52-0A2A-4FC3-867C-9B7E87C6B431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32959D52-0A2A-4FC3-867C-9B7E87C6B431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32959D52-0A2A-4FC3-867C-9B7E87C6B431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A803DCA0-7B0C-45F9-AE04-5676E9E83602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A803DCA0-7B0C-45F9-AE04-5676E9E83602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A803DCA0-7B0C-45F9-AE04-5676E9E83602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A803DCA0-7B0C-45F9-AE04-5676E9E83602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32A8A75-7984-4CBB-B111-12C43B6216CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32A8A75-7984-4CBB-B111-12C43B6216CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32A8A75-7984-4CBB-B111-12C43B6216CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32A8A75-7984-4CBB-B111-12C43B6216CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
